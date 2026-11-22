@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { translations } from "./translations";
-import { getLanguage, saveLanguage } from "../lib/language";
+import { getLanguage } from "../lib/language";
+import { supabase } from "../lib/supabase";
 
 export default function Home() { 
     const [empresa, setEmpresa] = useState("");
@@ -12,6 +13,8 @@ export default function Home() {
     const [objetivo, setObjetivo] = useState("");
     const [canalesSeleccionados, setCanalesSeleccionados] = useState<string[]>([]);
     const [respuestaIA, setRespuestaIA] = useState("");
+    const [openUserMenu, setOpenUserMenu] =
+  useState(false);
     const toggleCanal = (canal: string) => {
     setCanalesSeleccionados((prev) =>
     prev.includes(canal)
@@ -44,22 +47,73 @@ return (
     <div className="w-full max-w-6xl mx-auto p-8">
 <div className="flex justify-end mb-2">
 
- <select
-  value={language}
-  onChange={(e) => {
-    setLanguage(e.target.value);
+ <div className="flex items-center gap-2">
 
-    localStorage.setItem(
-      "salespilotLanguage",
-      e.target.value
-    );
-  }}
-  className="bg-slate-900 border border-slate-700 text-white rounded-lg px-3 py-2 text-sm hover:border-blue-500 transition"
->
-  <option value="es">🇪🇸 ES</option>
-  <option value="de">🇩🇪 DE</option>
-  <option value="en">🇬🇧 EN</option>
-</select>
+  <span className="text-white text-sm">
+    {t.idiomaMenu}
+  </span>
+
+  <select
+    value={language}
+    onChange={(e) => {
+      setLanguage(e.target.value);
+
+      localStorage.setItem(
+        "salespilotLanguage",
+        e.target.value
+      );
+    }}
+    className="bg-slate-900 border border-slate-700 rounded-lg px-3 py-2"
+  >
+    <option value="es">ES</option>
+    <option value="de">DE</option>
+    <option value="en">EN</option>
+  </select>
+</div>
+<div className="relative">
+
+  <button
+    onClick={() =>
+      setOpenUserMenu(!openUserMenu)
+    }
+    className="bg-slate-800 px-4 py-2 rounded-lg flex items-center gap-2"
+  >
+    {t.user}
+  </button>
+
+  {openUserMenu && (
+
+    <div className="absolute right-0 mt-2 w-56 bg-slate-900 rounded-xl shadow-xl border border-slate-700">
+
+      <a
+        href="/register"
+        className="block px-4 py-3 hover:bg-slate-800"
+      >
+        {t.crearCuenta}
+      </a>
+
+      <a
+        href="/login"
+        className="block px-4 py-3 hover:bg-slate-800"
+      >
+       {t.iniciarSesion}
+      </a>
+
+      <button
+        onClick={async () => {
+          await supabase.auth.signOut();
+          localStorage.clear();
+          window.location.href = "/app";
+        }}
+        className="block w-full text-left px-4 py-3 hover:bg-slate-800"
+      >
+        🚪 {t.cerrarSesion}
+      </button>
+
+    </div>
+
+  )}
+</div>
 </div>
       <div className="flex items-center justify-center gap-3 mb-4">
         <Image
@@ -78,10 +132,10 @@ return (
       <p className="text-center mt-3 text-slate-400 max-w-2xl mx-auto">
         {t.description}
       </p>
-      <div className="grid grid-cols-2 gap-4 mt-8">
+    <div className="grid grid-cols-2 gap-4 mt-8">
 
   <div
-  onClick={() => window.location.href = "/generador"}
+  onClick={() => window.location.href = "/generador"} 
   className="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center cursor-pointer hover:border-blue-500 transition"
 >
   <h3 className="text-lg font-bold">
@@ -130,8 +184,96 @@ return (
   {t.calendarioDesc}
 </p>
   </div>
+  </div>
+ <section className="mt-20">
 
+  <h2 className="text-2xl font-bold text-center mb-4">
+    {t.planesTitulo}
+  </h2>
+
+<p className="text-center text-slate-400 mb-10">
+  {t.planesDescripcion}
+  <span className="text-cyan-400">
+    {" "}
+    • {t.pruebaGratis}
+  </span>
+</p>
+  <div className="text-center mb-8">
+  
 </div>
+
+  <div className="grid md:grid-cols-3 gap-6">
+
+    {/* Básico */}
+
+    <div className="bg-slate-900 rounded-2xl p-5 border border-cyan-500">
+
+      <h3 className="text-2xl font-bold">
+        {t.planBasicoTitulo}
+      </h3>
+
+      <p className="text-cyan-400 text-2xl font-bold my-4">
+        9,99€
+      </p>
+
+      <ul className="space-y-2">
+        <li>✅ {t.planBasico10}</li>
+        <li>✅ {t.generadorContenidoPlan}</li>
+        <li>✅ {t.campanasPlan}</li>
+        <li>✅ {t.calendarioPlan}</li>
+      </ul>
+
+    </div>
+
+    {/* Profesional */}
+
+    <div className="bg-slate-900 rounded-2xl p-5 border border-cyan-500">
+
+      <h3 className="text-2xl font-bold">
+        {t.planProfesionalTitulo}
+      </h3>
+
+      <p className="text-cyan-400 text-2xl font-bold my-4">
+        14,99€
+      </p>
+
+      <ul className="space-y-2">
+        <li>✅ {t.planProfesional30}</li>
+        <li>✅ {t.generadorContenidoPlan}</li>
+        <li>✅ {t.campanasPlan}</li>
+        <li>✅ {t.calendarioPlan}</li>
+        <li>✅ {t.videoMarketingPlan}</li>
+      </ul>
+
+    </div>
+
+    {/* Empresa */}
+
+    <div className="bg-slate-900 rounded-2xl p-5 border border-cyan-500">
+
+      <h3 className="text-2xl font-bold">
+        {t.planEmpresaTitulo}
+      </h3>
+
+      <p className="text-cyan-400 text-2xl font-bold my-4">
+        39,99€
+      </p>
+
+      <ul className="space-y-2">
+        <li>✅ {t.usoAmpliado}</li>
+        <li>✅ {t.todasHerramientas}</li>
+        <li>✅ {t.prioridadPlan}</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <p className="text-center text-slate-400 mt-8">
+    {t.cancelacionFlexible}
+  </p>
+
+</section> 
 <div className="mt-16 flex justify-center">
 
   <div className="relative w-[500px] h-[350px]">

@@ -25,7 +25,7 @@ export const translations = {
     benefit2: "Más clientes",
     benefit3: "Menos tiempo invertido",
 
-    whySalesPilot: "¿Por qué SalesPilotAI?",
+    whySalesPilot: "¿Por qué SalesPilot AI?",
     why1: "Marketing simplificado",
     why2: "Contenido profesional",
     why3: "Impulsado por IA",
@@ -119,7 +119,7 @@ export const translations = {
         descripcionTexto: "Descripción",
         videoDesarrollo: "Generación de vídeo en desarrollo",
         imagenesRecibidas: "Tus imágenes se han recibido correctamente.",
-        proximamenteVideo:"Próximamente SalesPilotAI generará automáticamente:",
+        proximamenteVideo:"Próximamente SalesPilot AI generará automáticamente:",
         mp4Video: "Vídeo promocional MP4",
         instagramTexto: "Texto para Instagram",
         facebookTexto: "Texto para Facebook",
@@ -148,7 +148,7 @@ export const translations = {
       objetivoPrincipal: "Objetivo Principal",
       sobreNegocio: "Sobre el negocio",
       opinionTitulo: "Tu opinión es importante",
-      opinionDescripcion: "Nos gustaría conocer tu experiencia utilizando SalesPilotAI. Tu opinión nos ayudará a mejorar la herramienta.",
+      opinionDescripcion: "Nos gustaría conocer tu experiencia utilizando SalesPilot AI. Tu opinión nos ayudará a mejorar la herramienta.",
       opinionPlaceholder: "¿Qué te ha gustado? ¿Qué mejorarías?",
       enviarOpinion: "Enviar opinión",
       instagramTexto1: "Publicación diseñada para aumentar la visibilidad y generar interacción.",
@@ -175,7 +175,7 @@ export const translations = {
       planCampanaIA: "Plan de campaña generado por IA",
 
         campanaIAPendiente:
-          "La IA está preparada. Cuando OpenAI esté activa, SalesPilotAI generará automáticamente una estrategia de campaña personalizada.",
+          "La IA está preparada. Cuando OpenAI esté activa, SalesPilot AI generará automáticamente una estrategia de campaña personalizada.",
       dia2: "Día 2 → Beneficio principal.",
 
       semana1:
@@ -183,9 +183,89 @@ export const translations = {
 
       semana2:
         "Semana 2 → Conversión y captación de clientes.",
+      user: "Usuario",
+      crearCuenta: "👤 Crear Cuenta",
+      iniciarSesion: "🔑 Iniciar Sesión",
+      idiomaMenu: "🌍",
 
 
-        volverInicio: "← Volver al inicio",
+      correoElectronico: "Correo Electrónico",
+      contrasena: "Contraseña",
+      registrando: "Registrando...",
+      entrando: "Entrando...",
+      dashboard: "Panel de Control",
+      bienvenido: "Bienvenido",
+      planActual: "Plan Actual",
+      publicacionesDisponibles: "Publicaciones Disponibles",
+      actualizarPlan: "Actualizar Plan",
+
+      registerTitle: "Crear Cuenta",
+      nombre: "Nombre",
+      registroExitoso:
+        "Registro realizado correctamente. Revisa tu correo electrónico.",
+      errorGeneral:
+        "Ha ocurrido un error.",
+        loginCorrecto:
+        "Inicio de sesión correcto",
+
+        dashboardTitle: "Dashboard",
+      dashboardWelcome: "Bienvenida",
+      currentPlan: "Plan Actual",
+      freePlan: "FREE",
+      remainingPosts: "Publicaciones Disponibles",
+      upgradePlan: "Actualizar Plan",
+
+      contentGenerator: "Generador de Contenido",
+      contentGeneratorDesc: "Crear contenido profesional.",
+
+      smartCampaigns: "Campañas Inteligentes",
+      smartCampaignsDesc: "Campañas impulsadas por IA.",
+
+      videoMarketingDashboard: "Video Marketing",
+      videoMarketingDashboardDesc: "Ideas y estrategias de vídeo.",
+
+      smartCalendarDashboard: "Calendario Inteligente",
+      smartCalendarDashboardDesc: "Planifica publicaciones.",
+
+      basicPlan: "Plan Básico",
+      professionalPlan: "Plan Profesional",
+      enterprisePlan: "Plan Empresa", 
+
+      seleccionaPlan: "Selecciona tu plan",
+
+      planGratis: "Gratis (1 publicación)",
+      planBasico: "Plan Básico - 9,99€/mes",
+      planProfesional: "Plan Profesional - 14,99€/mes",
+      planEmpresa: "Plan Empresa - 39,99€/mes",
+
+ planesTitulo: "💎 Planes y Suscripción",
+planesDescripcion: "Elige el plan que mejor se adapte a tu negocio.",
+planBasico10: "10 publicaciones",
+planProfesional30: "30 publicaciones",
+generadorContenidoPlan:"Generador de contenidos",
+campanasPlan: "Campañas",
+calendarioPlan:"Calendario inteligente",
+videoMarketingPlan:"Video Marketing",
+usoAmpliado:"Uso ampliado",
+todasHerramientas:"Todas las herramientas",
+prioridadPlan:"Prioridad",
+cancelacionFlexible: "Cancela tu suscripción en cualquier momento",
+planBasicoTitulo: "Plan Básico",
+planProfesionalTitulo: "Plan Profesional",
+planEmpresaTitulo: "Plan Empresa",
+planGratisTitulo: "Prueba Gratuita",
+planGratisDesc: "1 publicación gratuita para probar SalesPilot AI sin compromiso.",
+      
+pruebaGratis: "Prueba SalesPilot AI gratis una vez y sin compromiso",
+cerrarSesion: "Cerrar Sesión",
+
+     volverInicio: "← Volver al inicio",
+
+      dashboardTitle1: "Mi Panel",
+      miPlan: "Mi Plan",
+      publicacionesRestantes: "Publicaciones restantes",
+      bienvenida: "Bienvenido a tu área privada",
+      
 
       
       },
@@ -214,7 +294,7 @@ export const translations = {
     benefit2: "Mehr Kunden",
     benefit3: "Weniger Zeitaufwand",
 
-    whySalesPilot: "Warum SalesPilotAI?",
+    whySalesPilot: "Warum SalesPilot AI?",
     why1: "Vereinfachtes Marketing",
     why2: "Professionelle Inhalte",
     why3: "KI-gestützt",
@@ -310,7 +390,7 @@ export const translations = {
         descripcionTexto: "Beschreibung",
         videoDesarrollo: "Videogenerierung in Entwicklung",
         imagenesRecibidas: "Deine Bilder wurden erfolgreich empfangen.",
-        proximamenteVideo: "SalesPilotAI wird bald automatisch generieren:",
+        proximamenteVideo: "SalesPilot AI wird bald automatisch generieren:",
         mp4Video: "MP4 Werbevideo",
         instagramTexto: "Text für Instagram",
         facebookTexto: "Text für Facebook",
@@ -339,7 +419,7 @@ export const translations = {
     objetivoPrincipal: "Hauptziel",
     sobreNegocio: "Über das Unternehmen",
     opinionTitulo: "Ihre Meinung ist wichtig",
-    opinionDescripcion: "Wir möchten Ihre Erfahrung mit SalesPilotAI kennenlernen. Ihr Feedback hilft uns bei der Verbesserung.",
+    opinionDescripcion: "Wir möchten Ihre Erfahrung mit SalesPilot AI kennenlernen. Ihr Feedback hilft uns bei der Verbesserung.",
     opinionPlaceholder: "Was hat Ihnen gefallen? Was würden Sie verbessern?",
     enviarOpinion: "Feedback senden",
       instagramTexto1: "Beitrag zur Steigerung der Sichtbarkeit und Interaktion.",
@@ -366,15 +446,99 @@ export const translations = {
         planCampanaIA: "KI-generierter Kampagnenplan",
 
       campanaIAPendiente:
-        "Die KI ist bereit. Sobald OpenAI aktiv ist, erstellt SalesPilotAI automatisch eine personalisierte Kampagnenstrategie.",
+        "Die KI ist bereit. Sobald OpenAI aktiv ist, erstellt SalesPilot AI automatisch eine personalisierte Kampagnenstrategie.",
       dia2: "Tag 2 → Hauptvorteil.",
       semana1:
           "Woche 1 → Markenbekanntheit und Sichtbarkeit.",
       semana2:
           "Woche 2 → Kundengewinnung und Conversion.",
 
+user: "Benutzer",
+crearCuenta: "👤 Konto erstellen",
+iniciarSesion: "🔑 Anmelden",
+idiomaMenu: "🌍",
+
+
+correoElectronico: "E-Mail",
+contrasena: "Passwort",
+registrando: "Registrieren...",
+entrando: "Anmeldung läuft...",
+dashboard: "Dashboard",
+bienvenido: "Willkommen",
+planActual: "Aktueller Plan",
+publicacionesDisponibles: "Verfügbare Veröffentlichungen",
+actualizarPlan: "Plan aktualisieren",
+
+registerTitle: "Konto erstellen",
+nombre: "Name",
+
+registroExitoso:
+  "Registrierung erfolgreich. Bitte prüfen Sie Ihre E-Mails.",
+errorGeneral:
+  "Ein Fehler ist aufgetreten.",
+
+  loginCorrecto:
+  "Anmeldung erfolgreich",
+
+ dashboardTitle: "Dashboard",
+dashboardWelcome: "Willkommen",
+currentPlan: "Aktueller Plan",
+freePlan: "FREE",
+remainingPosts: "Verfügbare Beiträge",
+upgradePlan: "Plan aktualisieren",
+
+contentGenerator: "Content Generator",
+contentGeneratorDesc: "Professionelle Inhalte erstellen.",
+
+smartCampaigns: "Intelligente Kampagnen",
+smartCampaignsDesc: "KI-gestützte Kampagnen.",
+
+videoMarketingDashboard: "Video Marketing",
+videoMarketingDashboardDesc: "Videoideen und Strategien.",
+
+smartCalendarDashboard: "Intelligenter Kalender",
+smartCalendarDashboardDesc: "Planen Sie Ihre Inhalte.",
+
+basicPlan: "Basisplan",
+professionalPlan: "Professioneller Plan",
+enterprisePlan: "Unternehmensplan", 
+seleccionaPlan: "Wähle deinen Plan",
+
+planGratis: "Kostenlos (1 Veröffentlichung)",
+planBasico: "Basisplan - 9,99€/Monat",
+planProfesional: "Professioneller Plan - 14,99€/Monat",
+planEmpresa: "Unternehmensplan - 39,99€/Monat",
+
+
+planesTitulo: "💎 Tarife & Abonnement",
+planesDescripcion: "Wählen Sie den Plan, der am besten zu Ihrem Unternehmen passt.",
+planBasico10: "10 Veröffentlichungen",
+planProfesional30: "30 Veröffentlichungen",
+generadorContenidoPlan: "Content Generator",
+campanasPlan: "Kampagnen",
+calendarioPlan: "Intelligenter Kalender",
+videoMarketingPlan: "Video Marketing",
+usoAmpliado: "Erweiterte Nutzung",
+todasHerramientas: "Alle Werkzeuge",
+prioridadPlan: "Priorität",
+cancelacionFlexible:"Abonnement jederzeit kündbar",
+
+planBasicoTitulo: "Basisplan",
+planProfesionalTitulo: "Professioneller Plan",
+planEmpresaTitulo: "Unternehmensplan",
+planGratisTitulo: "Kostenlos testen",
+planGratisDesc: "1 kostenlose Veröffentlichung zum Testen von SalesPilot AI ohne Verpflichtung.",
+pruebaGratis: "Testen Sie SalesPilot AI einmal kostenlos und unverbindlich",
+cerrarSesion: "Abmelden",
+
         volverInicio: "← Zur Startseite",
 
+      dashboardTitle1: "Mein Dashboard",
+      miPlan: "Mein Tarif",
+      publicacionesRestantes: "Verbleibende Beiträge",
+      bienvenida: "Willkommen in Ihrem privaten Bereich",
+    
+    
   },
 
   en: {
@@ -402,7 +566,7 @@ export const translations = {
     benefit2: "More customers",
     benefit3: "Less time invested",
 
-    whySalesPilot: "Why SalesPilotAI?",
+    whySalesPilot: "Why SalesPilot AI?",
     why1: "Simplified marketing",
     why2: "Professional content",
     why3: "Powered by AI",
@@ -494,7 +658,7 @@ export const translations = {
       descripcionTexto: "Description",
       videoDesarrollo: "Video generation in development",
       imagenesRecibidas: "Your images have been received successfully.",
-      proximamenteVideo: "SalesPilotAI will soon automatically generate:",
+      proximamenteVideo: "SalesPilot AI will soon automatically generate:",
       mp4Video: "Promotional MP4 Video",
       instagramTexto: "Instagram Text",
       facebookTexto: "Facebook Text",
@@ -523,7 +687,7 @@ export const translations = {
       objetivoPrincipal: "Main Goal",
       sobreNegocio: "About the Business",
       opinionTitulo: "Your Opinion Matters",
-      opinionDescripcion: "We would like to know your experience using SalesPilotAI. Your feedback will help us improve the tool.",
+      opinionDescripcion: "We would like to know your experience using SalesPilot AI. Your feedback will help us improve the tool.",
       opinionPlaceholder: "What did you like? What would you improve?",
       enviarOpinion: "Send Feedback",
 
@@ -550,13 +714,95 @@ export const translations = {
       
       planCampanaIA: "AI Generated Campaign Plan",
       campanaIAPendiente:
-        "The AI is ready. Once OpenAI is active, SalesPilotAI will automatically generate a personalized campaign strategy.",
+        "The AI is ready. Once OpenAI is active, SalesPilot AI will automatically generate a personalized campaign strategy.",
       dia2: "Day 2 → Main benefit.",
       semana1:
           "Week 1 → Brand awareness and visibility.",
       semana2:
           "Week 2 → Customer acquisition and conversion.",
+user: "User",
+crearCuenta: "👤 Create Account",
+iniciarSesion: "🔑 Sign In",
+idiomaMenu: "🌍",
 
-      volverInicio: "← Back to Home",
+correoElectronico: "Email",
+contrasena: "Password",
+registrando: "Registering...",
+entrando: "Signing In...",
+dashboard: "Dashboard",
+bienvenido: "Welcome",
+planActual: "Current Plan",
+publicacionesDisponibles: "Available Posts",
+actualizarPlan: "Upgrade Plan",
+
+
+registerTitle: "Create Account",
+nombre: "Name",
+registroExitoso:
+  "Registration successful. Please check your email.",
+errorGeneral:
+  "An error occurred.",
+  loginCorrecto:
+  "Login successful",
+  dashboardTitle: "Dashboard",
+dashboardWelcome: "Welcome",
+currentPlan: "Current Plan",
+freePlan: "FREE",
+remainingPosts: "Available Posts",
+upgradePlan: "Upgrade Plan",
+
+contentGenerator: "Content Generator",
+contentGeneratorDesc: "Create professional content.",
+
+smartCampaigns: "Smart Campaigns",
+smartCampaignsDesc: "AI-powered campaigns.",
+
+videoMarketingDashboard: "Video Marketing",
+videoMarketingDashboardDesc: "Video ideas and strategies.",
+
+smartCalendarDashboard: "Smart Calendar",
+smartCalendarDashboardDesc: "Plan your content.",
+
+basicPlan: "Basic Plan",
+professionalPlan: "Professional Plan",
+enterprisePlan: "Enterprise Plan",
+seleccionaPlan: "Choose your plan",
+
+planGratis: "Free (1 post)",
+planBasico: "Basic Plan - €9.99/month",
+planProfesional: "Professional Plan - €14.99/month",
+planEmpresa: "Enterprise Plan - €39.99/month",
+
+    planesTitulo: "💎 Abonnements & Preise",
+    planesDescripcion: "Choose the plan that best fits your business.",
+    planBasico10: "10 posts",
+    planProfesional30: "30 posts",
+    generadorContenidoPlan: "Content Generator",
+    campanasPlan: "Campaigns",
+    calendarioPlan: "Smart Calendar",
+    videoMarketingPlan: "Video Marketing",
+    usoAmpliado: "Extended Usage",
+    todasHerramientas: "All Tools",
+    prioridadPlan: "Priority",
+    cancelacionFlexible: "Cancel your subscription anytime",
+
+    planBasicoTitulo: "Basic Plan", 
+    planProfesionalTitulo: "Professional Plan",
+    planEmpresaTitulo: "Enterprise Plan",
+    planGratisTitulo: "Free Trial",
+    planGratisDesc: "1 free post to try SalesPilot AI with no commitment.",
+
+    pruebaGratis: "Try SalesPilot AI once for free with no commitment",
+    
+    cerrarSesion: "Sign Out",
+
+    volverInicio: "← Back to Home",
+
+
+      dashboardTitle1: "My Dashboard",
+      miPlan: "My Plan",
+      publicacionesRestantes: "Remaining Posts",
+      bienvenida: "Welcome to your private area",
+      
   },
 };

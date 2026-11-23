@@ -83,13 +83,14 @@ const [plan, setPlan] =
       },
     ]);
 
-  setMessage(t.registroExitoso);
+        setMessage(
+        t.registroPendienteConfirmacion
+      );
 
-  setNombre("");
-  setEmail("");
-  setPassword("");
+      setNombre("");
+      setEmail("");
+      setPassword("");
 
-  window.location.href = "/app";
 }
     } catch {
       setMessage(

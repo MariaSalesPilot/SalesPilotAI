@@ -259,14 +259,18 @@ planGratisDesc: "1 publicación gratuita para probar SalesPilot AI sin compromis
 pruebaGratis: "Prueba SalesPilot AI gratis una vez y sin compromiso",
 cerrarSesion: "Cerrar Sesión",
 
-     volverInicio: "← Volver al inicio",
+     
 
       dashboardTitle1: "Mi Panel",
       miPlan: "Mi Plan",
       publicacionesRestantes: "Publicaciones restantes",
       bienvenida: "Bienvenido a tu área privada",
       
-
+      registroPendienteConfirmacion: "✅ Cuenta creada correctamente. Revisa tu correo electrónico y confirma tu cuenta antes de iniciar sesión.",
+      correoConfirmado: "✅ Correo confirmado correctamente. Ya puede iniciar sesión.",
+      correoPendiente: "⚠️ Debe confirmar su correo electrónico para continuar.",
+  
+        volverInicio: "← Volver al inicio",
       
       },
 
@@ -531,13 +535,17 @@ planGratisDesc: "1 kostenlose Veröffentlichung zum Testen von SalesPilot AI ohn
 pruebaGratis: "Testen Sie SalesPilot AI einmal kostenlos und unverbindlich",
 cerrarSesion: "Abmelden",
 
-        volverInicio: "← Zur Startseite",
+        
 
       dashboardTitle1: "Mein Dashboard",
       miPlan: "Mein Tarif",
       publicacionesRestantes: "Verbleibende Beiträge",
       bienvenida: "Willkommen in Ihrem privaten Bereich",
+      registroPendienteConfirmacion: "✅ Konto erfolgreich erstellt. Bitte überprüfen Sie Ihre E-Mails und bestätigen Sie Ihr Konto, bevor Sie sich anmelden.",
+      correoConfirmado: "✅ E-Mail erfolgreich bestätigt. Sie können sich jetzt anmelden.",
+      correoPendiente: "⚠️ Sie müssen Ihre E-Mail-Adresse bestätigen, um fortzufahren.",
     
+      volverInicio: "← Zur Startseite",
     
   },
 
@@ -796,13 +804,15 @@ planEmpresa: "Enterprise Plan - €39.99/month",
     
     cerrarSesion: "Sign Out",
 
-    volverInicio: "← Back to Home",
-
-
       dashboardTitle1: "My Dashboard",
       miPlan: "My Plan",
       publicacionesRestantes: "Remaining Posts",
       bienvenida: "Welcome to your private area",
+      registroPendienteConfirmacion: "✅ Account created successfully. Please check your email and confirm your account before signing in.",
       
+      correoConfirmado:  "✅ Email confirmed successfully. You can now sign in.",
+      correoPendiente: "⚠️ You must confirm your email address to continue.",
+      
+      volverInicio: "← Back to Home",
   },
 };

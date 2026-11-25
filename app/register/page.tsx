@@ -182,11 +182,7 @@ const [plan, setPlan] =
                 <option value="professional">
                   {t.planProfesional}
                 </option>
-
-                <option value="enterprise">
-                  {t.planEmpresa}
-                </option>
-
+                
               </select>
 
             </div>

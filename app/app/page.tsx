@@ -9,9 +9,11 @@ import { supabase } from "../../lib/supabase";
 export default function AppPage() {
   const [language, setLanguage] = useState("es");
   const [plan, setPlan] = useState("");
-const [publicacionesRestantes, setPublicacionesRestantes] = useState(0);
+  const [publicacionesRestantes, setPublicacionesRestantes] = useState(0);
   const [user, setUser] = useState<any>(null);
   const [openUserMenu, setOpenUserMenu] = useState(false);
+
+  const planUsuario = plan || "free";
 
   useEffect(() => {
     setLanguage(getLanguage());
@@ -186,47 +188,54 @@ const [publicacionesRestantes, setPublicacionesRestantes] = useState(0);
           </div>
 
           <div
-            onClick={() =>
-              (window.location.href = "/campanas")
+          onClick={() => {
+            if (
+              planUsuario === "basic" ||
+              planUsuario === "professional"
+            ) {
+              window.location.href = "/campanas";
+            } else {
+              window.location.href = "/planes";
             }
-            className="bg-slate-900 border border-red-500 rounded-2xl p-6 text-center cursor-pointer hover:bg-slate-800"
-          >
-            <h3 className="text-lg font-bold">
-              🚀 {t.campanas}
-            </h3>
+          }}
+          className="bg-slate-900 border border-red-500 rounded-2xl p-6 text-center cursor-pointer hover:bg-slate-800"
+        >
+          <h3 className="text-lg font-bold">
+            {planUsuario === "basic" ||
+            planUsuario === "professional"
+              ? "🚀"
+              : "🔒"}{" "}
+            {t.campanas}
+          </h3>
 
-            <p className="text-sm text-slate-400 mt-2">
-              {t.campanasDesc}
-            </p>
-          </div>
+          <p className="text-sm text-slate-400 mt-2">
+            {planUsuario === "basic" ||
+            planUsuario === "professional"
+              ? t.campanasDesc
+              : t.campanasBloqueado}
+          </p>
+        </div>
 
           <div
-            onClick={() =>
-              (window.location.href = "/videos")
-            }
+            onClick={() => {
+              if (planUsuario === "professional") {
+                window.location.href = "/calendario";
+              } else {
+                window.location.href = "/planes";
+              }
+            }}
             className="bg-slate-900 border border-red-500 rounded-2xl p-6 text-center cursor-pointer hover:bg-slate-800"
           >
             <h3 className="text-lg font-bold">
-              🎬 {t.videos}
+              {planUsuario === "professional"
+                ? "📅"
+                : "🔒"}{" "}
+              {t.calendario}
             </h3>
 
             <p className="text-sm text-slate-400 mt-2">
-              {t.videosDesc}
-            </p>
-          </div>
-
-          <div
-            onClick={() =>
-              (window.location.href = "/calendario")
-            }
-            className="bg-slate-900 border border-red-500 rounded-2xl p-6 text-center cursor-pointer hover:bg-slate-800"
-          >
-            <h3 className="text-lg font-bold">
-              📅 {t.calendario}
-            </h3>
-
-            <p className="text-sm text-slate-400 mt-2">
-              {t.calendarioDesc}
+              {planUsuario === "professional"
+                ? t.calendarioDesc: t.calendarioBloqueado}
             </p>
           </div>
 

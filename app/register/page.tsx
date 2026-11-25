@@ -210,7 +210,16 @@ const [plan, setPlan] =
             {message}
           </p>
         )}
-
+          {message === t.registroPendienteConfirmacion && (
+            <div className="mt-6 text-center">
+              <button
+                onClick={() => window.location.href = "/"}
+                className="bg-slate-700 hover:bg-slate-600 px-6 py-3 rounded-lg"
+              >
+                {t.volverInicio}
+              </button>
+            </div>
+          )}
       </div>
 
     </main>

@@ -229,19 +229,21 @@ export const translations = {
 
       basicPlan: "Plan Básico",
       professionalPlan: "Plan Profesional",
-      enterprisePlan: "Plan Empresa", 
-
+      
       seleccionaPlan: "Selecciona tu plan",
 
-      planGratis: "Gratis (1 publicación)",
-      planBasico: "Plan Básico - 9,99€/mes",
-      planProfesional: "Plan Profesional - 14,99€/mes",
-      planEmpresa: "Plan Empresa - 39,99€/mes",
-
+ 
+     
  planesTitulo: "💎 Planes y Suscripción",
 planesDescripcion: "Elige el plan que mejor se adapte a tu negocio.",
-planBasico10: "10 publicaciones",
-planProfesional30: "30 publicaciones",
+planBasicoPublicaciones:
+  "10 publicaciones IA",
+
+planProfesionalPublicaciones:
+  "15 publicaciones IA",
+
+planProfesionalVideos:
+  "5 Videos IA",
 generadorContenidoPlan:"Generador de contenidos",
 campanasPlan: "Campañas",
 calendarioPlan:"Calendario inteligente",
@@ -252,25 +254,52 @@ prioridadPlan:"Prioridad",
 cancelacionFlexible: "Cancela tu suscripción en cualquier momento",
 planBasicoTitulo: "Plan Básico",
 planProfesionalTitulo: "Plan Profesional",
-planEmpresaTitulo: "Plan Empresa",
+
 planGratisTitulo: "Prueba Gratuita",
 planGratisDesc: "1 publicación gratuita para probar SalesPilot AI sin compromiso.",
       
 pruebaGratis: "Prueba SalesPilot AI gratis una vez y sin compromiso",
 cerrarSesion: "Cerrar Sesión",
 
-     
+      planGratis: "Gratis",
+      planBasico: "Básico",
+      planProfesional: "Profesional",
+      precioGratis: "0€",
+      precioBasico: "9,99€",
+      precioProfesional: "14,99€",
+
+      gratisLinea1: "✅ 1 Prueba Gratuita",
+      gratisLinea2: "✅ 1 Crédito de Bienvenida",
+      gratisLinea3: "❌ Campañas IA",
+      gratisLinea4: "❌ Calendario IA",
+
+      gratisNota1: "Utiliza tu crédito para generar 1 contenido IA o 1 Video IA. Solo una activación gratuita.",
+
+      gratisNota2: "Los videos gratuitos son solo demostrativos y no pueden descargarse.",
+
+      basicoLinea1: "✅ 10 Publicaciones IA",
+      basicoLinea2: "✅ Campañas IA",
+      basicoLinea3: "❌ Videos IA",
+      basicoLinea4: "❌ Calendario IA",
+
+      profesionalLinea1: "✅ 15 Publicaciones IA",
+      profesionalLinea2: "✅ 5 Videos IA",
+      profesionalLinea3: "✅ Campañas IA",
+      profesionalLinea4: "✅ Calendario IA",
 
       dashboardTitle1: "Mi Panel",
       miPlan: "Mi Plan",
       publicacionesRestantes: "Publicaciones restantes",
       bienvenida: "Bienvenido a tu área privada",
+      campanasBloqueado: "Disponible desde el Plan Básico",
       
       registroPendienteConfirmacion: "✅ Cuenta creada correctamente. Revisa tu correo electrónico y confirma tu cuenta antes de iniciar sesión.",
       correoConfirmado: "✅ Correo confirmado correctamente. Ya puede iniciar sesión.",
       correoPendiente: "⚠️ Debe confirmar su correo electrónico para continuar.",
-  
-        volverInicio: "← Volver al inicio",
+      videosBloqueado: "Disponible desde el Plan Profesional",
+      calendarioBloqueado: "Disponible solo para el Plan Profesional",
+      
+      volverInicio: "← Volver al inicio",
       
       },
 
@@ -504,38 +533,52 @@ smartCalendarDashboard: "Intelligenter Kalender",
 smartCalendarDashboardDesc: "Planen Sie Ihre Inhalte.",
 
 basicPlan: "Basisplan",
-professionalPlan: "Professioneller Plan",
-enterprisePlan: "Unternehmensplan", 
-seleccionaPlan: "Wähle deinen Plan",
-
-planGratis: "Kostenlos (1 Veröffentlichung)",
-planBasico: "Basisplan - 9,99€/Monat",
-planProfesional: "Professioneller Plan - 14,99€/Monat",
-planEmpresa: "Unternehmensplan - 39,99€/Monat",
-
-
-planesTitulo: "💎 Tarife & Abonnement",
+professionalPlan: "Professional Plan",
+seleccionaPlan: "Wählen Sie Ihren Tarif",
+planesTitulo: "💎 Tarife & Abonnements",
 planesDescripcion: "Wählen Sie den Plan, der am besten zu Ihrem Unternehmen passt.",
-planBasico10: "10 Veröffentlichungen",
-planProfesional30: "30 Veröffentlichungen",
-generadorContenidoPlan: "Content Generator",
-campanasPlan: "Kampagnen",
-calendarioPlan: "Intelligenter Kalender",
-videoMarketingPlan: "Video Marketing",
+
+planGratis: "Kostenlos",
+planBasico: "Basis",
+planProfesional: "Professional",
+
+precioGratis: "0€",
+precioBasico: "9,99€",
+precioProfesional: "14,99€",
+
+planBasicoPublicaciones: "10 KI-Beiträge",
+planProfesionalPublicaciones: "15 KI-Beiträge",
+planProfesionalVideos: "5 KI-Videos",
+generadorContenidoPlan: "KI-Content Generator",
+campanasPlan: "KI-Kampagnen",
+calendarioPlan: "KI-Kalender",
+videoMarketingPlan: "KI-Videos",
 usoAmpliado: "Erweiterte Nutzung",
-todasHerramientas: "Alle Werkzeuge",
+todasHerramientas: "Alle Funktionen",
 prioridadPlan: "Priorität",
-cancelacionFlexible:"Abonnement jederzeit kündbar",
-
+cancelacionFlexible: "Jederzeit kündbar",
 planBasicoTitulo: "Basisplan",
-planProfesionalTitulo: "Professioneller Plan",
-planEmpresaTitulo: "Unternehmensplan",
-planGratisTitulo: "Kostenlos testen",
-planGratisDesc: "1 kostenlose Veröffentlichung zum Testen von SalesPilot AI ohne Verpflichtung.",
-pruebaGratis: "Testen Sie SalesPilot AI einmal kostenlos und unverbindlich",
-cerrarSesion: "Abmelden",
+planProfesionalTitulo: "Professional Plan",
+planGratisTitulo: "Kostenlose Testversion",
+planGratisDesc: "1 Willkommensguthaben zum Testen von SalesPilot AI.",
+pruebaGratis: "Testen Sie SalesPilot AI kostenlos und unverbindlich",
+gratisLinea1: "✅ 1 Kostenloser Test",
+gratisLinea2: "✅ 1 Willkommensguthaben",
+gratisLinea3: "❌ KI-Kampagnen",
+gratisLinea4: "❌ KI-Kalender",
+gratisNota1:  "Nutzen Sie Ihr Guthaben für 1 KI-Inhalt oder 1 KI-Video. Nur eine kostenlose Aktivierung.",
+gratisNota2:  "Kostenlose Videos dienen nur zur Demonstration und können nicht heruntergeladen werden.",
+basicoLinea1: "✅ 10 KI-Beiträge",
+basicoLinea2: "✅ KI-Kampagnen",
+basicoLinea3: "❌ KI-Videos",
+basicoLinea4: "❌ KI-Kalender",
 
-        
+profesionalLinea1: "✅ 15 KI-Beiträge",
+profesionalLinea2: "✅ 5 KI-Videos",
+profesionalLinea3: "✅ KI-Kampagnen",
+profesionalLinea4: "✅ KI-Kalender",
+
+cerrarSesion: "Abmelden",
 
       dashboardTitle1: "Mein Dashboard",
       miPlan: "Mein Tarif",
@@ -544,7 +587,10 @@ cerrarSesion: "Abmelden",
       registroPendienteConfirmacion: "✅ Konto erfolgreich erstellt. Bitte überprüfen Sie Ihre E-Mails und bestätigen Sie Ihr Konto, bevor Sie sich anmelden.",
       correoConfirmado: "✅ E-Mail erfolgreich bestätigt. Sie können sich jetzt anmelden.",
       correoPendiente: "⚠️ Sie müssen Ihre E-Mail-Adresse bestätigen, um fortzufahren.",
-    
+      videosBloqueado: "Verfügbar ab dem Professional-Plan",
+      calendarioBloqueado: "Nur im Professional Plan verfügbar",
+      campanasBloqueado: "Verfügbar ab dem Basisplan",
+
       volverInicio: "← Zur Startseite",
     
   },
@@ -773,34 +819,52 @@ smartCalendarDashboardDesc: "Plan your content.",
 
 basicPlan: "Basic Plan",
 professionalPlan: "Professional Plan",
-enterprisePlan: "Enterprise Plan",
-seleccionaPlan: "Choose your plan",
 
-planGratis: "Free (1 post)",
-planBasico: "Basic Plan - €9.99/month",
-planProfesional: "Professional Plan - €14.99/month",
-planEmpresa: "Enterprise Plan - €39.99/month",
+seleccionaPlan: "Choose your Plan",
 
-    planesTitulo: "💎 Abonnements & Preise",
-    planesDescripcion: "Choose the plan that best fits your business.",
-    planBasico10: "10 posts",
-    planProfesional30: "30 posts",
-    generadorContenidoPlan: "Content Generator",
-    campanasPlan: "Campaigns",
-    calendarioPlan: "Smart Calendar",
-    videoMarketingPlan: "Video Marketing",
-    usoAmpliado: "Extended Usage",
-    todasHerramientas: "All Tools",
-    prioridadPlan: "Priority",
-    cancelacionFlexible: "Cancel your subscription anytime",
+planesTitulo: "💎 Plans & Pricing",
 
-    planBasicoTitulo: "Basic Plan", 
-    planProfesionalTitulo: "Professional Plan",
-    planEmpresaTitulo: "Enterprise Plan",
-    planGratisTitulo: "Free Trial",
-    planGratisDesc: "1 free post to try SalesPilot AI with no commitment.",
+planesDescripcion:
+  "Choose the plan that best fits your business.",
 
-    pruebaGratis: "Try SalesPilot AI once for free with no commitment",
+planGratis: "Free",
+planBasico: "Basic",
+planProfesional: "Professional",
+
+precioGratis: "€0",
+precioBasico: "€9.99",
+precioProfesional: "€14.99",
+
+planBasicoPublicaciones:  "10 AI Posts",
+planProfesionalPublicaciones: "15 AI Posts",
+planProfesionalVideos: "5 AI Videos",
+generadorContenidoPlan: "AI Content Generator",
+campanasPlan:  "AI Campaigns",
+calendarioPlan: "AI Calendar",
+videoMarketingPlan: "AI Videos",
+usoAmpliado: "Extended Usage",
+todasHerramientas: "All Features",
+prioridadPlan: "Priority",
+cancelacionFlexible: "Cancel anytime",
+planBasicoTitulo: "Basic Plan",
+planProfesionalTitulo: "Professional Plan",
+planGratisTitulo: "Free Trial",
+planGratisDesc: "1 welcome credit to try SalesPilot AI.",
+pruebaGratis: "Try SalesPilot AI for free with no commitment",
+gratisLinea1: "✅ 1 Free Trial",
+gratisLinea2: "✅ 1 Welcome Credit",
+gratisLinea3: "❌ AI Campaigns",
+gratisLinea4: "❌ AI Calendar",
+gratisNota1: "Use your credit for 1 AI Content or 1 AI Video. Only one free activation.",
+gratisNota2: "Free videos are for demonstration purposes only and cannot be downloaded.",
+basicoLinea1: "✅ 10 AI Posts",
+basicoLinea2: "✅ AI Campaigns",
+basicoLinea3: "❌ AI Videos",
+basicoLinea4: "❌ AI Calendar",
+profesionalLinea1: "✅ 15 AI Posts",
+profesionalLinea2: "✅ 5 AI Videos",
+profesionalLinea3: "✅ AI Campaigns",
+profesionalLinea4: "✅ AI Calendar",
     
     cerrarSesion: "Sign Out",
 
@@ -812,6 +876,9 @@ planEmpresa: "Enterprise Plan - €39.99/month",
       
       correoConfirmado:  "✅ Email confirmed successfully. You can now sign in.",
       correoPendiente: "⚠️ You must confirm your email address to continue.",
+      videosBloqueado: "Available from the Professional Plan",
+      calendarioBloqueado: "Available only with the Professional Plan",
+      campanasBloqueado: "Available from the Basic Plan",
       
       volverInicio: "← Back to Home",
   },

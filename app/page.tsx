@@ -185,84 +185,85 @@ return (
 </p>
   </div>
   </div>
- <section className="mt-20">
+<section className="mt-20">
 
   <h2 className="text-2xl font-bold text-center mb-4">
     {t.planesTitulo}
   </h2>
 
-<p className="text-center text-slate-400 mb-10">
-  {t.planesDescripcion}
-  <span className="text-cyan-400">
-    {" "}
-    • {t.pruebaGratis}
-  </span>
-</p>
-  <div className="text-center mb-8">
-  
-</div>
+  <p className="text-center text-slate-400 mb-10">
+    {t.planesDescripcion}
+  </p>
 
   <div className="grid md:grid-cols-3 gap-6">
 
-    {/* Básico */}
+    {/* GRATIS */}
+
+    <div className="bg-slate-900 rounded-2xl p-5 border border-slate-700">
+
+      <h3 className="text-2xl font-bold">
+        🆓 {t.planGratis}
+      </h3>
+       
+      <p className="text-slate-300 text-2xl font-bold my-4">
+        {t.precioGratis}
+      </p>
+
+      <ul className="space-y-2">
+        <li>{t.gratisLinea1}</li>
+        <li>{t.gratisLinea2}</li>
+        <li>{t.gratisLinea3}</li>
+        <li>{t.gratisLinea4}</li>
+      </ul>
+      <div className="mt-4 text-xs text-yellow-300 space-y-2">
+        <p>
+          {t.gratisNota1}
+        </p>
+        <p>
+          {t.gratisNota2}
+        </p>
+
+      </div>
+    </div>
+
+    {/* BÁSICO */}
 
     <div className="bg-slate-900 rounded-2xl p-5 border border-cyan-500">
 
       <h3 className="text-2xl font-bold">
-        {t.planBasicoTitulo}
+        💼 {t.planBasico}
       </h3>
 
       <p className="text-cyan-400 text-2xl font-bold my-4">
-        9,99€
+        {t.precioBasico}
       </p>
 
       <ul className="space-y-2">
-        <li>✅ {t.planBasico10}</li>
-        <li>✅ {t.generadorContenidoPlan}</li>
-        <li>✅ {t.campanasPlan}</li>
-        <li>✅ {t.calendarioPlan}</li>
+        <li>{t.basicoLinea1}</li>
+        <li>{t.basicoLinea2}</li>
+        <li>{t.basicoLinea3}</li>
+        <li>{t.basicoLinea4}</li>
       </ul>
 
     </div>
 
-    {/* Profesional */}
+    {/* PROFESIONAL */}
 
-    <div className="bg-slate-900 rounded-2xl p-5 border border-cyan-500">
+    <div className="bg-slate-900 rounded-2xl p-5 border border-green-500">
 
       <h3 className="text-2xl font-bold">
-        {t.planProfesionalTitulo}
+        🚀 {t.planProfesional}
       </h3>
 
-      <p className="text-cyan-400 text-2xl font-bold my-4">
-        14,99€
+      <p className="text-green-400 text-2xl font-bold my-4">
+        {t.precioProfesional}
       </p>
 
       <ul className="space-y-2">
-        <li>✅ {t.planProfesional30}</li>
-        <li>✅ {t.generadorContenidoPlan}</li>
-        <li>✅ {t.campanasPlan}</li>
-        <li>✅ {t.calendarioPlan}</li>
-        <li>✅ {t.videoMarketingPlan}</li>
-      </ul>
-
-    </div>
-
-    {/* Empresa */}
-
-    <div className="bg-slate-900 rounded-2xl p-5 border border-cyan-500">
-
-      <h3 className="text-2xl font-bold">
-        {t.planEmpresaTitulo}
-      </h3>
-
-      <p className="text-cyan-400 text-2xl font-bold my-4">
-        39,99€
-      </p>
-
-      <ul className="space-y-2">
-        <li>✅ {t.usoAmpliado}</li>
-        <li>✅ {t.todasHerramientas}</li>
-        <li>✅ {t.prioridadPlan}</li>
+        <li>{t.profesionalLinea1}</li>
+        <li>{t.profesionalLinea2}</li>
+        <li>{t.profesionalLinea3}</li>
+        <li>{t.profesionalLinea4}</li>
       </ul>
 
     </div>
